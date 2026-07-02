@@ -3,7 +3,7 @@
 // ============================================================
 
 export const CATTERY = {
-  name: "Texas Haven Ragdolls",
+  name: "TexasHaven Ragdolls",
   tagline: "Gentle giants, raised with love in Arlington, TX",
   location: "Arlington, Texas",
   email: "stacisoutherland24@gmail.com",

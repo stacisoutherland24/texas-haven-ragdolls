@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, PawPrint } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { CATTERY } from "../data/siteData";
 
 const NAV_LINKS = [
@@ -20,11 +20,11 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-dust-100">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2.5 group">
-          <div className="w-9 h-9 bg-dust-500 rounded-xl flex items-center justify-center shadow-sm group-hover:bg-dust-600 transition-colors">
-            <PawPrint size={18} className="text-white" />
+        <Link to="/" className="flex items-center gap-3 group">
+          <div className="w-8 h-8 bg-dust-500 rounded-lg flex items-center justify-center overflow-hidden">
+            <img src="/favicon.svg" alt="TexasHaven logo" className="w-full h-full object-cover" />
           </div>
-          <span className="font-serif text-lg text-dust-800 tracking-tight">{CATTERY.name}</span>
+          <span className="font-serif text-xl text-dust-800 tracking-tight">{CATTERY.name}</span>
         </Link>
 
         {/* Desktop nav */}
