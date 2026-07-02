@@ -3,15 +3,15 @@
 // ============================================================
 
 export const CATTERY = {
-  name: "BlueMist Ragdolls",
+  name: "Texas Haven Ragdolls",
   tagline: "Gentle giants, raised with love in Arlington, TX",
   location: "Arlington, Texas",
-  email: "hello@bluemistragdolls.com",
-  phone: "(817) 555-0192",
-  instagram: "@bluemistragdolls",
-  facebook: "BlueMistRagdolls",
+  email: "stacisoutherland24@gmail.com",
+  phone: "(682)7151933",
+  instagram: "",
+  facebook: "",
   tica: "TICA Registered Cattery",
-  established: "2024",
+  established: "2026",
 };
 
 export const QUEENS = [
