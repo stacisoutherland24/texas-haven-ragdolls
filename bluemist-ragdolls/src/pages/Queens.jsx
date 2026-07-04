@@ -21,8 +21,10 @@ export default function Queens() {
           >
             <div className={`grid md:grid-cols-2 ${i % 2 === 1 ? "md:flex-row-reverse" : ""}`}>
               {/* Photo */}
-              <div className="h-72 md:h-auto bg-gradient-to-br from-dust-100 via-dust-200 to-dust-300 flex items-center justify-center text-8xl relative">
-                {q.emoji}
+              <div className="h-72 md:h-auto bg-gradient-to-br from-dust-100 via-dust-200 to-dust-300 flex items-center justify-center text-8xl relative overflow-hidden">
+                {q.image
+                  ? <img src={q.image} alt={q.name} className="absolute inset-0 w-full h-full object-cover object-top" style={{ imageRendering: "auto", filter: "blur(0px)" }} />
+                  : q.emoji}
                 <div className="absolute top-4 left-4 bg-white/80 backdrop-blur-sm rounded-xl px-3 py-1.5 flex items-center gap-1.5">
                   <span className="w-2 h-2 rounded-full bg-emerald-400 inline-block"></span>
                   <span className="text-xs font-sans text-dust-600 font-medium">Active queen</span>
