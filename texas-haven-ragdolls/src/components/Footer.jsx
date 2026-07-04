@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { PawPrint, Mail, Phone, Instagram } from "lucide-react";
+import { Mail, Phone, Instagram } from "lucide-react";
 import { CATTERY } from "../data/siteData";
 
 export default function Footer() {
@@ -9,8 +9,8 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <div className="flex items-center gap-2.5 mb-4">
-            <div className="w-8 h-8 bg-dust-500 rounded-lg flex items-center justify-center">
-              <PawPrint size={15} className="text-white" />
+            <div className="w-8 h-8 bg-dust-500 rounded-lg flex items-center justify-center overflow-hidden">
+              <img src="/favicon.svg" alt="TexasHaven logo" className="w-full h-full object-cover" />
             </div>
             <span className="font-serif text-base text-white">{CATTERY.name}</span>
           </div>
